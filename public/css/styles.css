@@ -86,7 +86,7 @@ button {
   gap: 26px;
   background: var(--purple);
   border: 1px solid var(--purple);
-  color: white !important;
+  color: white;
   padding: 17px 24px;
   border-radius: 9px;
   font-weight: 700;
@@ -95,6 +95,11 @@ button {
     transform 0.2s,
     background 0.2s;
 }
+
+a.btn:hover {
+  color: white;
+}
+
 .btn:hover {
   background: #6947e4;
   transform: translateY(-2px);
@@ -485,7 +490,7 @@ h3 {
 }
 .about-shape > span {
   transform: rotate(15deg);
-  font-family: "Space Grotesk";
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.05;
@@ -583,18 +588,7 @@ h3 {
   font-size: 30px;
   margin: 18px 0 8px;
 }
-.coming-soon {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  padding: 16px;
-  border-radius: 8px;
-  background: #a28bff14;
-  color: #c5b5ff;
-  font-size: 13px;
-  font-weight: 700;
-  margin: 27px 0 20px;
-}
+
 .contact-panel small {
   color: #8795ad;
   line-height: 1.8;
@@ -823,11 +817,12 @@ button:focus-visible {
   cursor: wait;
   transform: none;
 }
-.contact-status {
-  margin: 12px 0 !important;
+output.contact-status {
+  display: block;
+  margin: 12px 0;
   min-height: 20px;
-  font-size: 13px !important;
-  line-height: 1.5 !important;
+  font-size: 13px;
+  line-height: 1.5;
 }
 .contact-status.success {
   color: #8cf0c9;
@@ -977,5 +972,24 @@ button:focus-visible {
     font-size: 28px;
     bottom: 18px;
     right: 18px;
+  }
+}
+
+/* =========================================
+   ACCESIBILIDAD - MOVIMIENTO REDUCIDO
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

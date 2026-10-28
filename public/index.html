@@ -11,6 +11,9 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/styles.css" />
     <script defer src="/js/main.js"></script>
@@ -73,11 +76,7 @@
               </p>
             </div>
           </div>
-          <div
-            class="hero-art"
-            aria-label="Ilustración abstracta de tecnología y desarrollo digital"
-            role="img"
-          >
+          <div class="hero-art" aria-hidden="true">
             <div class="orbit orbit-one"></div>
             <div class="orbit orbit-two"></div>
             <div class="glow"></div>
@@ -275,12 +274,11 @@
               <button class="btn contact-submit" type="submit">
                 Enviar mensaje <span aria-hidden="true">↗</span>
               </button>
-              <p
+              <output
                 id="contact-status"
                 class="contact-status"
-                role="status"
                 aria-live="polite"
-              ></p>
+              ></output>
             </form>
             <small
               >Formulario de demostración académica. No envía correos ni
