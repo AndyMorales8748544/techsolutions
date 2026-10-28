@@ -14,9 +14,9 @@ stages:
         displayName: 'Instalacion, pruebas y artefacto'
         steps:
 
-          - task: NodeTool@0
+          - task: UseNode@1
             inputs:
-              versionSpec: '24.x'
+              version: '24.x'
             displayName: 'Instalar Node.js 24'
 
           - script: npm ci
