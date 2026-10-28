@@ -1,61 +1,369 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="TechSolutions: soluciones digitales para negocios que quieren crecer." />
-  <title>TechSolutions | Impulsamos tu futuro digital</title>
-  <link rel="stylesheet" href="/css/styles.css" />
-  <script defer src="/js/main.js"></script>
-</head>
-<body>
-  <header class="site-header">
-    <nav class="nav container" aria-label="Navegación principal">
-      <a class="brand" href="#inicio" aria-label="TechSolutions, ir al inicio"><span class="brand-mark">T<span>+</span></span> TechSolutions</a>
-      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="nav-links" aria-expanded="false">☰</button>
-      <div class="nav-links" id="nav-links">
-        <a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#proceso">Proceso</a>
-        <a class="btn btn-small" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow"><span class="pulse"></span> TU ALIADO EN TRANSFORMACIÓN DIGITAL</span>
-          <h1>Ideas audaces.<br /><span>Soluciones</span><br />extraordinarias.</h1>
-          <p>Convertimos desafíos tecnológicos en oportunidades de crecimiento. Diseñamos, desarrollamos y potenciamos tu negocio en el mundo digital.</p>
-          <div class="hero-actions"><a class="btn" href="#contacto">Empecemos tu proyecto <span aria-hidden="true">↗</span></a><a class="text-link" href="#servicios">Explorar servicios <span aria-hidden="true">→</span></a></div>
-          <div class="hero-proof"><div class="avatars" aria-hidden="true"><span>JS</span><span>UX</span><span>AI</span></div><p><strong>Tecnología con propósito</strong><br />Soluciones diseñadas para personas reales</p></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="TechSolutions: soluciones digitales para negocios que quieren crecer."
+    />
+    <title>TechSolutions | Impulsamos tu futuro digital</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="TechSolutions, ir al inicio"
+          ><span class="brand-mark">T<span>+</span></span> TechSolutions</a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-controls="nav-links"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a
+          ><a href="#proceso">Proceso</a>
+          <a class="btn btn-small" href="#contacto">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            WhatsApp
+          </a>
         </div>
-        <div class="hero-art" aria-label="Ilustración abstracta de tecnología y desarrollo digital" role="img">
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="glow"></div>
-          <div class="floating-card card-code"><span class="dots">● ● ●</span><pre><span class="code-purple">const</span> future = {
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow"
+              ><span class="pulse"></span> TU ALIADO EN TRANSFORMACIÓN
+              DIGITAL</span
+            >
+            <h1>
+              Ideas audaces.<br /><span>Soluciones</span><br />extraordinarias.
+            </h1>
+            <p>
+              Convertimos desafíos tecnológicos en oportunidades de crecimiento.
+              Diseñamos, desarrollamos y potenciamos tu negocio en el mundo
+              digital.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="#contacto"
+                >Empecemos tu proyecto <span aria-hidden="true">↗</span></a
+              ><a class="text-link" href="#servicios"
+                >Explorar servicios <span aria-hidden="true">→</span></a
+              >
+            </div>
+            <div class="hero-proof">
+              <div class="avatars" aria-hidden="true">
+                <span>JS</span><span>UX</span><span>AI</span>
+              </div>
+              <p>
+                <strong>Tecnología con propósito</strong><br />Soluciones
+                diseñadas para personas reales
+              </p>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="glow"></div>
+            <div class="floating-card card-code">
+              <span class="dots">● ● ●</span>
+              <pre><span class="code-purple">const</span> future = {
   ideas: <span class="code-green">'limitless'</span>,
   impact: <span class="code-green">'real'</span>
-};</pre></div>
-          <div class="floating-card card-stats"><span class="stats-icon">↗</span><div><strong>Build better.</strong><small>Innovate faster.</small></div></div>
-          <div class="hero-symbol">&lt;<span>/</span>&gt;</div>
-          <span class="spark spark-a">✦</span><span class="spark spark-b">✧</span>
+};</pre>
+            </div>
+            <div class="floating-card card-stats">
+              <span class="stats-icon">↗</span>
+              <div>
+                <strong>Build better.</strong><small>Innovate faster.</small>
+              </div>
+            </div>
+            <div class="hero-symbol">&lt;<span>/</span>&gt;</div>
+            <span class="spark spark-a">✦</span
+            ><span class="spark spark-b">✧</span>
+          </div>
+        </div>
+        <div class="container hero-footer">
+          <span>ESTRATEGIA</span><span class="separator">✳</span
+          ><span>DESARROLLO</span><span class="separator">✳</span
+          ><span>INNOVACIÓN</span><span class="separator">✳</span
+          ><span>RESULTADOS</span>
+        </div>
+      </section>
+      <section class="section services" id="servicios">
+        <div class="container">
+          <div class="section-top">
+            <div>
+              <span class="section-label">01 / LO QUE HACEMOS</span>
+              <h2>Tecnología que <em>transforma.</em></h2>
+            </div>
+            <p>
+              Combinamos creatividad, estrategia y tecnología para crear
+              experiencias digitales que marcan la diferencia.
+            </p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="service-icon">⌘</div>
+              <span class="service-number">01</span>
+              <h3>Desarrollo web</h3>
+              <p>
+                Aplicaciones modernas, rápidas y escalables que conectan tu
+                negocio con nuevas oportunidades.
+              </p>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">◈</div>
+              <span class="service-number">02</span>
+              <h3>Diseño UX/UI</h3>
+              <p>
+                Interfaces intuitivas y experiencias memorables que ponen a tus
+                usuarios en el centro.
+              </p>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">◎</div>
+              <span class="service-number">03</span>
+              <h3>Soluciones cloud</h3>
+              <p>
+                Infraestructura confiable y flexible para llevar tus ideas al
+                siguiente nivel.
+              </p>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section about" id="nosotros">
+        <div class="container about-grid">
+          <div class="about-visual">
+            <div class="about-shape">
+              <span>THINK<br />BEYOND<span class="accent-dot">.</span></span>
+            </div>
+            <span class="about-tag">CREAMOS EL MAÑANA, HOY.</span>
+          </div>
+          <div class="about-copy">
+            <span class="section-label">02 / QUIÉNES SOMOS</span>
+            <h2>No solo hacemos software. <em>Creamos posibilidades.</em></h2>
+            <p>
+              En TechSolutions creemos que la tecnología debe resolver problemas
+              reales. Nuestro enfoque une pensamiento estratégico, diseño
+              centrado en las personas y desarrollo de calidad.
+            </p>
+            <p>
+              Nos apasiona convertir ideas complejas en productos digitales
+              simples, útiles y preparados para evolucionar.
+            </p>
+            <a class="text-link dark-link" href="#contacto"
+              >Construyamos algo juntos <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section process" id="proceso">
+        <div class="container">
+          <span class="section-label">03 / NUESTRA FORMA DE TRABAJAR</span>
+          <h2>Del concepto a la <em>realidad.</em></h2>
+          <div class="steps">
+            <div class="step">
+              <span>01</span>
+              <h3>Descubrimos</h3>
+              <p>Entendemos tu desafío y definimos objetivos claros.</p>
+            </div>
+            <div class="step">
+              <span>02</span>
+              <h3>Diseñamos</h3>
+              <p>Transformamos ideas en experiencias funcionales.</p>
+            </div>
+            <div class="step">
+              <span>03</span>
+              <h3>Construimos</h3>
+              <p>Desarrollamos con calidad, agilidad y buenas prácticas.</p>
+            </div>
+            <div class="step">
+              <span>04</span>
+              <h3>Evolucionamos</h3>
+              <p>Medimos resultados y mejoramos continuamente.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contacto">
+        <div class="container contact-grid">
+          <div>
+            <span class="section-label light-label">04 / SIGUIENTE PASO</span>
+            <h2>Tu próxima gran idea <em>empieza aquí.</em></h2>
+            <p>
+              ¿Tienes un proyecto en mente? Nos encantaría conocerlo. Cuéntanos
+              tu idea y demos el primer paso.
+            </p>
+            <div class="contact-note">
+              ✳ &nbsp; Cada gran proyecto comienza con una conversación.
+            </div>
+          </div>
+          <div class="contact-panel">
+            <span class="panel-kicker">HABLEMOS DE TU PROYECTO</span>
+            <h3>¿Listo para comenzar?</h3>
+            <p>Cuéntanos tu idea y nos pondremos en contacto contigo.</p>
+            <form id="contact-form" novalidate>
+              <div class="form-field">
+                <label for="contact-name">Nombre completo</label
+                ><input
+                  id="contact-name"
+                  name="nombre"
+                  type="text"
+                  autocomplete="name"
+                  maxlength="100"
+                  required
+                  aria-describedby="contact-name-error"
+                /><span
+                  class="field-error"
+                  id="contact-name-error"
+                  aria-live="polite"
+                ></span>
+              </div>
+              <div class="form-field">
+                <label for="contact-email">Correo electrónico</label
+                ><input
+                  id="contact-email"
+                  name="correo"
+                  type="email"
+                  autocomplete="email"
+                  maxlength="254"
+                  required
+                  aria-describedby="contact-email-error"
+                /><span
+                  class="field-error"
+                  id="contact-email-error"
+                  aria-live="polite"
+                ></span>
+              </div>
+              <div class="form-field">
+                <label for="contact-message">Tu proyecto</label
+                ><textarea
+                  id="contact-message"
+                  name="mensaje"
+                  rows="4"
+                  maxlength="2000"
+                  required
+                  aria-describedby="contact-message-error"
+                ></textarea
+                ><span
+                  class="field-error"
+                  id="contact-message-error"
+                  aria-live="polite"
+                ></span>
+              </div>
+              <button class="btn contact-submit" type="submit">
+                Enviar mensaje <span aria-hidden="true">↗</span>
+              </button>
+              <output
+                id="contact-status"
+                class="contact-status"
+                aria-live="polite"
+              ></output>
+            </form>
+            <small
+              >Formulario de demostración académica. No envía correos ni
+              almacena mensajes.</small
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-content">
+        <!-- Información de TechSolutions -->
+        <div class="footer-column">
+          <a class="brand" href="#inicio">
+            <span class="brand-mark">T<span>+</span></span>
+            TechSolutions
+          </a>
+          <p>
+            Transformamos ideas en soluciones digitales que impulsan negocios.
+          </p>
+        </div>
+
+        <!-- Enlaces de navegación -->
+        <nav class="footer-column" aria-label="Navegación del pie de página">
+          <h3>Enlaces rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <!-- Redes sociales -->
+        <div class="footer-column">
+          <h3>Síguenos</h3>
+          <div class="footer-social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="container hero-footer"><span>ESTRATEGIA</span><span class="separator">✳</span><span>DESARROLLO</span><span class="separator">✳</span><span>INNOVACIÓN</span><span class="separator">✳</span><span>RESULTADOS</span></div>
-    </section>
-    <section class="section services" id="servicios"><div class="container"><div class="section-top"><div><span class="section-label">01 / LO QUE HACEMOS</span><h2>Tecnología que <em>transforma.</em></h2></div><p>Combinamos creatividad, estrategia y tecnología para crear experiencias digitales que marcan la diferencia.</p></div>
-      <div class="service-grid"><article class="service-card"><div class="service-icon">⌘</div><span class="service-number">01</span><h3>Desarrollo web</h3><p>Aplicaciones modernas, rápidas y escalables que conectan tu negocio con nuevas oportunidades.</p><span class="service-arrow" aria-hidden="true">↗</span></article><article class="service-card"><div class="service-icon">◈</div><span class="service-number">02</span><h3>Diseño UX/UI</h3><p>Interfaces intuitivas y experiencias memorables que ponen a tus usuarios en el centro.</p><span class="service-arrow" aria-hidden="true">↗</span></article><article class="service-card"><div class="service-icon">◎</div><span class="service-number">03</span><h3>Soluciones cloud</h3><p>Infraestructura confiable y flexible para llevar tus ideas al siguiente nivel.</p><span class="service-arrow" aria-hidden="true">↗</span></article></div>
-    </div></section>
-    <section class="section about" id="nosotros"><div class="container about-grid"><div class="about-visual"><div class="about-shape"><span>THINK<br />BEYOND<span class="accent-dot">.</span></span></div><span class="about-tag">CREAMOS EL MAÑANA, HOY.</span></div><div class="about-copy"><span class="section-label">02 / QUIÉNES SOMOS</span><h2>No solo hacemos software. <em>Creamos posibilidades.</em></h2><p>En TechSolutions creemos que la tecnología debe resolver problemas reales. Nuestro enfoque une pensamiento estratégico, diseño centrado en las personas y desarrollo de calidad.</p><p>Nos apasiona convertir ideas complejas en productos digitales simples, útiles y preparados para evolucionar.</p><a class="text-link dark-link" href="#contacto">Construyamos algo juntos <span aria-hidden="true">↗</span></a></div></div></section>
-    <section class="section process" id="proceso"><div class="container"><span class="section-label">03 / NUESTRA FORMA DE TRABAJAR</span><h2>Del concepto a la <em>realidad.</em></h2><div class="steps"><div class="step"><span>01</span><h3>Descubrimos</h3><p>Entendemos tu desafío y definimos objetivos claros.</p></div><div class="step"><span>02</span><h3>Diseñamos</h3><p>Transformamos ideas en experiencias funcionales.</p></div><div class="step"><span>03</span><h3>Construimos</h3><p>Desarrollamos con calidad, agilidad y buenas prácticas.</p></div><div class="step"><span>04</span><h3>Evolucionamos</h3><p>Medimos resultados y mejoramos continuamente.</p></div></div></div></section>
-    <section class="contact" id="contacto"><div class="container contact-grid"><div><span class="section-label light-label">04 / SIGUIENTE PASO</span><h2>Tu próxima gran idea <em>empieza aquí.</em></h2><p>¿Tienes un proyecto en mente? Nos encantaría conocerlo. Cuéntanos tu idea y demos el primer paso.</p><div class="contact-note">✳ &nbsp; Cada gran proyecto comienza con una conversación.</div></div><div class="contact-panel"><span class="panel-kicker">HABLEMOS DE TU PROYECTO</span><h3>¿Listo para comenzar?</h3><p>Cuéntanos tu idea y nos pondremos en contacto contigo.</p>
-<form id="contact-form" novalidate>
-  <div class="form-field"><label for="contact-name">Nombre completo</label><input id="contact-name" name="nombre" type="text" autocomplete="name" maxlength="100" required aria-describedby="contact-name-error" /><span class="field-error" id="contact-name-error" aria-live="polite"></span></div>
-  <div class="form-field"><label for="contact-email">Correo electrónico</label><input id="contact-email" name="correo" type="email" autocomplete="email" maxlength="254" required aria-describedby="contact-email-error" /><span class="field-error" id="contact-email-error" aria-live="polite"></span></div>
-  <div class="form-field"><label for="contact-message">Tu proyecto</label><textarea id="contact-message" name="mensaje" rows="4" maxlength="2000" required aria-describedby="contact-message-error"></textarea><span class="field-error" id="contact-message-error" aria-live="polite"></span></div>
-  <button class="btn contact-submit" type="submit">Enviar mensaje <span aria-hidden="true">↗</span></button>
-  <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
-</form>
-<small>Formulario de demostración académica. No envía correos ni almacena mensajes.</small></div></div></section>
-  </main>
-  <footer class="footer"><div class="container footer-row"><a class="brand" href="#inicio"><span class="brand-mark">T<span>+</span></span> TechSolutions</a><span>© <span id="year">2026</span> TechSolutions. Proyecto académico DevOps.</span><a href="#inicio">Volver arriba ↑</a></div></footer>
-</body></html>
+
+      <div class="container footer-bottom">
+        <span
+          >© <span id="year">2026</span> TechSolutions. Proyecto académico
+          DevOps.</span
+        >
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a
+      href="#contacto"
+      class="whatsapp-float"
+      aria-label="Contactar por WhatsApp (demostración)"
+      title="WhatsApp - Próximamente"
+    >
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+  </body>
+</html>
