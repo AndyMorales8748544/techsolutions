@@ -1,0 +1,44 @@
+# Pipeline CI/CD - TechSolutions
+
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: CI
+    displayName: 'Integracion continua'
+    jobs:
+      - job: BuildAndTest
+        displayName: 'Instalacion, pruebas y artefacto'
+        steps:
+
+          - task: NodeTool@0
+            inputs:
+              versionSpec: '24.x'
+            displayName: 'Instalar Node.js 24'
+
+          - script: npm ci
+            displayName: 'Instalar dependencias'
+
+          - script: npm test
+            displayName: 'Ejecutar pruebas automatizadas'
+
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: '$(Build.SourcesDirectory)'
+              Contents: |
+                public/**
+                server.js
+                package.json
+                package-lock.json
+              TargetFolder: '$(Build.ArtifactStagingDirectory)'
+            displayName: 'Preparar archivos de la aplicacion'
+
+          - task: PublishPipelineArtifact@1
+            inputs:
+              targetPath: '$(Build.ArtifactStagingDirectory)'
+              artifact: 'techsolutions-app'
+              publishLocation: 'pipeline'
+            displayName: 'Publicar artefacto'
