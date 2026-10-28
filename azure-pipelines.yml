@@ -19,7 +19,7 @@ stages:
               version: '24.x'
             displayName: 'Instalar Node.js 24'
 
-          - script: npm ci
+          - script: npm ci --ignore-scripts
             displayName: 'Instalar dependencias'
 
           - script: npm test
