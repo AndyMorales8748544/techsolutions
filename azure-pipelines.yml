@@ -42,3 +42,17 @@ stages:
               artifact: 'techsolutions-app'
               publishLocation: 'pipeline'
             displayName: 'Publicar artefacto'
+  - stage: Deploy
+    displayName: 'Despliegue a produccion'
+    dependsOn: CI
+    condition: succeeded()
+    jobs:
+      - deployment: DeployWeb
+        displayName: 'Desplegar TechSolutions'
+        environment: 'production'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - script: echo "Preparando despliegue de TechSolutions"
+                  displayName: 'Verificar etapa de despliegue'
